@@ -1,0 +1,28 @@
+// import { parseISO, isValid } from 'date-fns';
+// import { Request, Response } from 'express';
+// import prisma from '../vendedor-api/src/config/database';
+
+// export const createCliente = async (req: Request, res: Response) => {
+//     try {
+//         const { nome, dataAniversario } = req.body;
+//         const dataAniversarioDate = parseISO(dataAniversario); // Converte para objeto Date
+
+//         if (!isValid(dataAniversarioDate)) {
+//             return res.status(400).json({ error: 'Data de aniversário inválida' });
+//         }
+
+//         const cliente = await prisma.cliente.create({
+//             data: {
+//                 nome,
+//                 dataAniversario: dataAniversarioDate,
+//             },
+//         });
+
+//         res.status(201).json(cliente);
+//     } catch (error) {
+//         console.error(error);
+//         res.status(500).json({ error: 'Erro ao criar cliente' });
+//     }
+// };
+
+// // Outros métodos do controlador...
